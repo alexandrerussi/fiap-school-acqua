@@ -1,0 +1,36 @@
+.input-div {
+    margin: 20px 0;
+}
+
+.input-div label,
+.input-div input {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+}
+
+.input-div label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.input-div input {
+    padding: 15px 20px;
+    border: 1px solid #b0b0b0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.3s all;
+}
+
+.input-div input:focus {
+    outline: 0;
+    border: 1px solid #e3135c;
+}
+
+.webcam {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: block;
+}
