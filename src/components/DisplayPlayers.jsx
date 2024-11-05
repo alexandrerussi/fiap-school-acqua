@@ -3,8 +3,8 @@ import './DisplayPlayers.css';
 import { useNavigate } from 'react-router-dom';
 import { usePlayers } from '../context/PlayerContext';
 import soundEffect from '../assets/effect.mp3';
-import interstelarSoundEffect from '../assets/FirstStepMin.mp3';
-import astronautMask from '../assets/astronaut.png'; // Ensure the path is correct
+import interstelarSoundEffect from '../assets/musicaacqua.mp3';
+import astronautMask from '../assets/pirata.png'; // Ensure the path is correct
 import fiapLogo from '../assets/acqua_robot.svg';
 import cube from '../assets/cube.webp';
 import ball from '../assets/ball.webp';
@@ -18,21 +18,22 @@ function DisplayPlayers() {
     const { players, resetPlayers } = usePlayers();
     const navigate = useNavigate();
     const [rovers, setRovers] = useState([
-        { nome: "Equipe1", turma: "8EFA" },
-        { nome: "Equipe2", turma: "8EFA" },
-        { nome: "Equipe3", turma: "8EFA" },
-        { nome: "Equipe4", turma: "8EFA" },
-        { nome: "Equipe5", turma: "8EFA" },
-        { nome: "Equipe6", turma: "8EFB" },
-        { nome: "Equipe7", turma: "8EFB" },
-        { nome: "Equipe8", turma: "8EFB" },
-        { nome: "Equipe9", turma: "8EFB" },
-        { nome: "Equipe10", turma: "8EFB" },
-        { nome: "Equipe11", turma: "8EFC" },
-        { nome: "Equipe12", turma: "8EFC" },
-        { nome: "Equipe13", turma: "8EFC" },
-        { nome: "Equipe14", turma: "8EFC" },
-        { nome: "Equipe15", turma: "8EFC" }
+        { nome: "Paixonalta", turma: "8EFA" },
+        { nome: "Acquabot", turma: "8EFA" },
+        { nome: "Axolote", turma: "8EFA" },
+        { nome: "Tubarão", turma: "8EFA" },
+        { nome: "Linguado", turma: "8EFA" },
+        { nome: "Hank", turma: "8EFB" },
+        { nome: "Thomas e seus amigos", turma: "8EFB" },
+        { nome: "Sapo", turma: "8EFB" },
+        { nome: "Martelo", turma: "8EFB" },
+        { nome: "Catamara", turma: "8EFB" },
+        { nome: "Porta Aviões", turma: "8EFC" },
+        { nome: "Magikarp", turma: "8EFC" },
+        { nome: "Demon Dark", turma: "8EFC" },
+        { nome: "Tartaruga", turma: "8EFC" },
+        { nome: "Araia manta", turma: "8EFC" },
+        { nome: "Origami Boat", turma: "8EFC" }
     ]);
     const [assignedRovers, setAssignedRovers] = useState([]);
     const [currentRoverIndex, setCurrentRoverIndex] = useState(0);

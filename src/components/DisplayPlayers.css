@@ -6,6 +6,12 @@
     position: relative;
 }
 
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .players div {
     display: flex;
     align-items: center;
@@ -43,11 +49,11 @@
 
 .player-photo {
     position: absolute;
-    top: 44%;  /* Adjust these to align the face correctly within the mask */
-    left: 50%;
+    top: 61%;
+    left: 54%;
     transform: translate(-50%, -50%);
-    width: 20vh;  /* Ensure the photo covers the mask area */
-    height: 20vh;
+    width: 13vh;
+    height: 12vh;
     object-fit: cover;
     border-radius: 50%;
     z-index: 1;
@@ -57,7 +63,7 @@
     /* position: absolute; */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 105%;
     height: 100%;
     z-index: 2;
 }
